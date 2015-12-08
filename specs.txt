@@ -1,0 +1,15 @@
+SPEC 1:  A single word spelled the same both backwards and forwards is a palindrome
+Input:  bob
+Output:  TRUE
+
+SPEC 2:  There must be at least 2 characters to be identified as a palindrome
+Input:  a
+Output:  FALSE
+
+SPEC 3:  A full phrase may be a palindrome
+Input:  Ed is on no side
+Output:  TRUE
+
+SPEC 4:  A palindrome may include all alphanumeric characters
+Input:  101
+Output:  TRUE
