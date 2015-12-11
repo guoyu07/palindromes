@@ -16,11 +16,17 @@
             $this->assertEquals(TRUE, $result);
         }
 
-        // function test_identify_2()
-        // {
-        //     //Arrange
-        //     $test_Palindrome = new Palindrome;
-        //     $word = ''
-        // }
+        function test_identify_phrase()
+        {
+            //Arrange
+            $test_Palindrome = new Palindrome;
+            $word = 'Evil Olive';
+
+            //Act
+            $result = $test_Palindrome->identify($word);
+
+            //Assert
+            $this->assertEquals(TRUE, $result);
+        }
     }
  ?>
