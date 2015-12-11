@@ -55,5 +55,18 @@
             $this->assertEquals(TRUE, $result);
         }
 
+        function test_identify_punctuation()
+        {
+            //Arrange
+            $test_Palindrome = new Palindrome;
+            $word = 'A Santa at NASA!';
+
+            //Act
+            $result = $test_Palindrome->identify($word);
+
+            //Assert
+            $this->assertEquals(TRUE, $result);
+        }
+
     }
  ?>
