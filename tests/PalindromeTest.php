@@ -1,7 +1,7 @@
 <?php
     require_once 'src/Palindrome.php';
 
-    class Palindrome extends PHPUnit_Framework_TestCase
+    class PalindromeTest extends PHPUnit_Framework_TestCase
     {
         function test_identify_single()
         {
@@ -10,7 +10,7 @@
             $word = 'kayak';
 
             //Act
-            $result = $test_Palindrome($word)->identify;
+            $result = $test_Palindrome->identify($word);
 
             //Assert
             $this->assertEquals(TRUE, $result);
