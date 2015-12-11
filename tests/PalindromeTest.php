@@ -28,5 +28,17 @@
             //Assert
             $this->assertEquals(TRUE, $result);
         }
+
+        function test_identify_notapalindrome()
+        {
+            //Arrange
+            $test_Palindrome = new Palindrome;
+            $word = 'computer';
+            $result = $test_Palindrome->identify($word);
+
+            //Assert
+            $this->assertEquals(FALSE, $result);
+        }
+
     }
  ?>
