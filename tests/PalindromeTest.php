@@ -34,10 +34,25 @@
             //Arrange
             $test_Palindrome = new Palindrome;
             $word = 'computer';
+
+            //Act
             $result = $test_Palindrome->identify($word);
 
             //Assert
             $this->assertEquals(FALSE, $result);
+        }
+
+        function test_identify_alphanumeric()
+        {
+            //Arrange
+            $test_Palindrome = new Palindrome;
+            $word = '101 A Toyota 101';
+
+            //Act
+            $result = $test_Palindrome->identify($word);
+
+            //Assert
+            $this->assertEquals(TRUE, $result);
         }
 
     }
