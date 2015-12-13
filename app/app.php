@@ -3,7 +3,7 @@
     require_once __DIR__.'/../src/Palindrome.php';
 
     $app = new Silex\Application();
-    $app->register(new Silex\Provdier\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
+    $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.path' => __DIR__.'/../views'));
 
     $app->get('/', function () use ($app)
     {
