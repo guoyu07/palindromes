@@ -17,7 +17,7 @@
             }
             if ($string_array == $reverse)
             {
-                return TRUE;
+                return 'Yes';
             }
             else
             {
