@@ -8,11 +8,9 @@
     <div class='container'>
         <h1>Palindromes</h1>
         {% if letters is empty %}
-        <p>negativo. that was not a palindrome.</p>
+            <p>Error: no information was submitted. Please try again.</p>
         {% else %}
-        {% for letter in letters %}
             <p>{{ letters }}</p>
-        {% endfor %}
         {% endif %}
         <a href='/'>return home</a>
     </div>

@@ -21,7 +21,7 @@
             }
             else
             {
-                return FALSE;
+                return 0;
             }
         }
     }
